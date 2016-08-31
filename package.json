@@ -5,11 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "WEBPACK_ENV=dev webpack --inline --hot",
-    "build": "npm run clean && webpack",
-    "clean": "rm public/bundle.js public/bundle.js.map",
-    "test": "mocha -w test/test_helper.js test/*.spec.js",
-    "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./"
+    "clean": "rm public/bundle.js public/bundle.js.map"
   },
   "author": "lentata",
   "license": "ISC",
@@ -22,12 +18,8 @@
     "babel-preset-stage-1": "^6.1.18",
     "babel-register": "^6.11.6",
     "body-parser": "^1.15.2",
-    "bookshelf": "^0.10.0",
     "express": "^4.14.0",
     "firebase": "^3.3.0",
-    "jsonfile": "^2.3.1",
-    "knex": "^0.11.9",
-    "lodash": "^4.14.1",
     "moment": "^2.14.1",
     "mongoose": "^4.5.8",
     "q": "^1.4.1",
@@ -42,20 +34,11 @@
     "redux": "^3.5.2",
     "redux-form": "^5.3.1",
     "redux-promise": "^0.5.3",
-    "sqlite3": "^3.1.4",
-    "webpack": "^1.12.9",
-    "webpack-dev-middleware": "^1.6.1",
-    "webpack-dev-server": "^1.14.1",
-    "webpack-hot-middleware": "^2.12.2"
+    "webpack": "^1.12.9"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-enzyme": "^0.5.0",
-    "enzyme": "^2.4.1",
     "jquery": "^2.2.1",
     "jsdom": "^8.1.0",
-    "mocha": "^2.5.3",
-    "react-addons-test-utils": "^15.3.0",
-    "sinon": "^1.17.5"
+    "react-addons-test-utils": "^15.3.0"
   }
 }

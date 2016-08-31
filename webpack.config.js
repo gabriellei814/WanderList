@@ -25,15 +25,4 @@ var config = {
   plugins: []
 }
 
-
-
-if (env === 'dev') {
-  config.entry.unshift("webpack-dev-server/client?http://localhost:8080/", "webpack/hot/dev-server");
-  config.plugins.push(new webpack.HotModuleReplacementPlugin());
-  new WebpackDevServer(webpack(config), {
-    contentBase: './public',
-    hot: true
-  }).listen(8080);
-}
-
 module.exports = config;

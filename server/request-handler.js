@@ -4,7 +4,6 @@ var User = require('./models/mongo_user');
 var mongoose = require('mongoose');
 
 var path = require('path');
-var jsonfile = require('jsonfile');
 
 var mongoose = require('mongoose');
 mongoose.Promise = require('q').Promise;
